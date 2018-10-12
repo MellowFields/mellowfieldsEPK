@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+hr {
+    width: 10%;
+    margin: 0 auto;
+}
+
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    /*background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mellowfields-5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 90%;
+    left: 84%;
+    padding: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+.enter {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 60%;
+    left: 50%;
+    padding: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+}
+
+.enter:hover {
+    position: absolute;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 60%;
+    left: 50%;
+    padding: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+}
+
+a img {
+    padding: 5px;
+}
+
+.nav-logo {
+     float: left;
+    list-style: none;
+    margin-top: 35px;
+    padding-left: 15px;
+    color: #fff;
+     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    letter-spacing: 2px;
+}
+
+.nav-city {
+     float: left;
+    list-style: none;
+    margin-top: 55px;
+    
+    color: #fff;
+     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 2px;
+}
+
+.fields {
+    color: #4d4dff;
+}
+
+/* Main navi */
+
+nav {
+    margin-right: 10px;
+    overflow: hidden;
+    background-color: #000;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 35px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.main-nav .icon {
+    display: none;
+}
+
+ .main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #4d4dff;
+}
+
+
+
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+/* MUSIC SECTION */
+
+.section-music {
+    background: #000;
+    padding-bottom: 90px;
+   
+    
+}
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    background-color: #000;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.image {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.music {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 90%;
+}
+
+.spotify {
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 515px;
+   
+ 
+   
+}
+
+
+.june {
+    color: #fff;
+    float: right;
+    margin-top: 20px;
+    margin-right: 350px;
+    font-size: 90%;
+}
+
+.self {
+    color: #fff;
+    float: right;
+    margin-top: 25px;
+    margin-left: 170px;
+    margin-right: 200px;
+    padding: 20px;
+    padding-bottom: -10px;
+    font-size: 75%;
+    letter-spacing: 1px;
+    text-indent: 30px;
+}
+.mellow-f{
+    color: #fff;
+    float: right;
+    margin-top: 45px;
+    margin-right: 350px;
+    font-size: 90%;
+}
+
+
+/* Sectino Tour */
+.section-tour {
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/mellow2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/mellow2.png);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-top: 15px;
+}
+
+.tour {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.date:hover {
+  background: #fff;
+  margin: 0 auto;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin-top: -1px; /* Prevent double borders */
+  padding: 12px;
+  text-align: center;
+  width: 55%;
+    color: #000;
+}
+
+.date:nth-child(2n) {
+    color: #fff;
+}
+
+.date:hover:nth-child(2n) {
+    color: #000;
+}
+
+.date {
+  margin: 0 auto;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: transparent;
+  padding: 12px;
+  text-align: center;
+  width: 55%;
+}
+
+
+/*FORM */
+
+
+.section-form {
+    background: #000;
+     color: #fff;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+label {
+    font-size: 80%;
+    text-transform: uppercase;
+   
+}
+
+
+.music {
+    text-transform: uppercase;
+}
+
+.contact-mellow {
+    text-align: center;
+    color: #fff;
+    padding-top: 25px;
+    
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+    
+}
+
+.btn {
+    padding: 10px;
+    margin: 0 auto;
+    margin-left: 325px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid white;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    padding: 10px;
+    margin: 0 auto;
+    margin-left: 325px;
+    background: #fff;
+    color: #000;
+    border: 1px solid white;
+}
+
+*:focus {outline: none;}
+
+
+/* FOOTER */
+
+
+footer {
+    background-color: #000;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-youtube,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-youtube:hover {
+    color: #ff0000;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .main-nav a li {display: none;}
+  .main-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .main-nav.responsive {position: relative;}
+  .main-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Use a media query to add a breakpoint at 800px: 
+@media screen and (max-width: 800px) {
+    {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller
+  }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Image Slider
+
+/* Slideshow container
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) 
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators 
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size 
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}  */
